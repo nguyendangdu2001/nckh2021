@@ -11,21 +11,28 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { ToastContainer } from "react-toastify";
 
 import axios from "axios";
+import Nav from "@components/Nav";
 
 const loadFeatures = () =>
   import("./config/framer-motion").then((res) => res.default);
 function App() {
-  axios.get("");
   return (
-    <LazyMotion features={loadFeatures} strict>
-      <div style={{ position: "absolute" }} id="back-to-top-anchor" />
-      <Header />
-      <ToastContainer />
-      <GetRoutes />
-      <Footer />
-      <ScrollToTop />
-      <ReactQueryDevtools initialIsOpen />
-    </LazyMotion>
+    <div className="dark:bg-[#121212] bg-white transition-colors w-full h-full py-3">
+      <LazyMotion features={loadFeatures} strict>
+        <div style={{ position: "absolute" }} id="back-to-top-anchor" />
+
+        <ToastContainer />
+        <div className="flex w-full h-full">
+          <Nav />
+          <div className="w-full h-full">
+            <GetRoutes />
+          </div>
+        </div>
+
+        <ScrollToTop />
+        <ReactQueryDevtools initialIsOpen />
+      </LazyMotion>
+    </div>
   );
 }
 

@@ -5,11 +5,11 @@ module.exports = {
     enable: true,
     content: ["./src/**/*.{js,jsx,ts,tsx,css}", "./index.html"],
   },
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["Montserrat", "sans-serif"],
+      sans: ["Poppins", "sans-serif"],
       serif: ["Merriweather", "serif"],
     },
   },
@@ -20,5 +20,6 @@ module.exports = {
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/line-clamp"),
+    require("./src/plugin/border"),
   ],
 };

@@ -1,5 +1,6 @@
 import axios from "axios";
-axios.defaults.baseURL = import.meta.env.BE_URL;
+export const baseURL = "http://localhost:8000";
+axios.defaults.baseURL = baseURL;
 export const configAxios = (store) => {
   axios.interceptors.request.use(
     (config) => {

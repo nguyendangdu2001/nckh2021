@@ -13,9 +13,9 @@ export default defineConfig({
       throwOnError: true,
     }),
   ],
-  // define: {
-  //   global: "window",
-  // },
+  define: {
+    global: "window",
+  },
   resolve: {
     alias: {
       "@pages": resolve(__dirname, "./src/pages"),
