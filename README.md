@@ -2,17 +2,22 @@
 
 This project was bootstrapped with [Vite].
 
-## This project use
+## Prerequisites
 
-### React-query
+- You have install node enviroment in your computer (LTS version)
 
-### Tailwind css
+## How to start this project
 
-### Styled-components
+Step 1: clone this repo<br />
+Step 2: run `yarn install` or `npm install` in command line<br />
+Step 3: run `yarn dev` or `npm start dev` in command line<br />
+Step 4: go to [http://localhost:3000](http://localhost:3000) with your browser<br />
 
-### Redux (thunk)
+## Available route
 
-### Framer motion
+`/galery`:Galery<br/>
+`/img-scan`:Detect<br/>
+`/`:Home<br/>
 
 ## Available Scripts
 
